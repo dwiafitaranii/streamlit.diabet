@@ -36,17 +36,17 @@ scaler = pickle.load(open('scaler.sav', 'rb'))
 # Judul web
 st.title('🔍 Prediksi Diabetes dengan Data Mining')
 
-st.markdown("Masukkan data pasien untuk mengetahui prediksi diabetes berdasarkan model ML.", unsafe_allow_html=True)
+st.markdown("Masukkan data pasien untuk mengetahui prediksi diabetes...", unsafe_allow_html=True)
 
 # Input fields
-pregnancies = st.text_input('🧬 Nilai Pregnancies')
-Glucose = st.text_input('🍬 Nilai Glucose')
-BloodPressure = st.text_input('🩸 Nilai Blood Pressure')
-SkinThickness = st.text_input('📏 Nilai Skin Thickness')
-Insulin = st.text_input('💉 Nilai Insulin')
-BMI = st.text_input('⚖️ Nilai BMI')
-DiabetesPedigreeFunction = st.text_input('👨‍👩‍👧‍👦 Nilai Diabetes Pedigree Function')
-Age = st.text_input('🎂 Nilai Age')
+pregnancies = st.text_input('Input Nilai Pregnancies 🧬')
+Glucose = st.text_input('Input Nilai Glucose')
+BloodPressure = st.text_input('Input Nilai Blood Pressure 🩸')
+SkinThickness = st.text_input('Input Nilai Skin Thickness')
+Insulin = st.text_input('Input Nilai Insulin 💉')
+BMI = st.text_input('Input Nilai BMI')
+DiabetesPedigreeFunction = st.text_input('Input Nilai Diabetes Pedigree Function 👨‍👩‍👧‍👦')
+Age = st.text_input('Input Nilai Age')
 
 # Tombol prediksi
 if st.button('🔎 Test Prediksi Diabetes'):
